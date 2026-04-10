@@ -1,1 +1,158 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urata – Support</title>
+  <style>
+    :root {
+      --accent:  #945C14;
+      --gold:    #CC9933;
+      --bg:      #FBF4E8;
+      --card:    #FFFFFF;
+      --text:    #2C1A08;
+      --muted:   #7A5C3A;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:   #1A1208;
+        --card: #2A1E0E;
+        --text: #F0E0C0;
+        --muted:#C0A070;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 2rem 1rem 4rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .logo {
+      width: 90px; height: 90px;
+      border-radius: 22px;
+      background: linear-gradient(145deg, var(--accent), var(--gold));
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 8px 24px rgba(148,92,20,.30);
+    }
+    h1 { font-size: 2rem; font-weight: 700; color: var(--accent); }
+    .tagline { color: var(--muted); margin-top: .4rem; font-size: 1rem; }
 
+    .container { max-width: 680px; margin: 0 auto; }
+
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 1.6rem 1.8rem;
+      margin-bottom: 1.2rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+      border: 1px solid rgba(148,92,20,.10);
+    }
+    .card h2 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: .8rem;
+      display: flex; align-items: center; gap: .5rem;
+    }
+    .card p, .card li {
+      font-size: .95rem;
+      line-height: 1.65;
+      color: var(--text);
+    }
+    .card ul { padding-left: 1.2rem; }
+    .card ul li { margin-bottom: .4rem; }
+
+    a.email-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: .7rem 1.6rem;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .95rem;
+      transition: opacity .2s;
+    }
+    a.email-btn:hover { opacity: .85; }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: .82rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">🙏</div>
+      <h1>Urata</h1>
+      <p class="tagline">Lutje Shqipe Katolike &mdash; Albanian Catholic Prayers</p>
+    </header>
+
+    <!-- About -->
+    <div class="card">
+      <h2>📖 Rreth Aplikacionit</h2>
+      <p>
+        <strong>Urata</strong> është një aplikacion falas për lutje shqipe katolike.
+        Ofron lutje të përditshme, kalendar liturgjik, widget dhe njoftime ditore.
+        Krijuar me dashuri nga <strong>Vilson Krasniqi – JK-IT Solution, Zvicër</strong>.
+      </p>
+    </div>
+
+    <!-- FAQ -->
+    <div class="card">
+      <h2>❓ Pyetje të Shpeshta</h2>
+      <ul>
+        <li><strong>Si aktivizoj njoftimet ditore?</strong><br>
+            Shko te <em>Cilësimet → Njoftimet</em> dhe aktivizo çelësin. Cakto orën e preferuar.</li>
+        <li><strong>Si shtoj një lutje në kalendarit Apple?</strong><br>
+            Hap <em>Kalendarin</em>, trokit butonin <em>📅</em> te çdo festë liturgjike.</li>
+        <li><strong>Ku ruhen lutjet e preferuara?</strong><br>
+            Trokit ikonën ⭐ te çdo lutje. Gjenden pastaj te skeda <em>Të preferuara</em>.</li>
+        <li><strong>A funksionon aplikacioni pa internet?</strong><br>
+            Po – të gjitha lutjet janë offline.</li>
+        <li><strong>Si ndryshoj madhësinë e shkronjave?</strong><br>
+            Cilësimet e iOS: <em>Aksesueshmëria → Madhësia e Tekstit</em>.</li>
+      </ul>
+    </div>
+
+    <!-- Privacy -->
+    <div class="card">
+      <h2>🔒 Privatësia</h2>
+      <p>
+        Urata <strong>nuk mbledh asnjë të dhënë personale</strong>. Nuk ka analitikë,
+        nuk ka reklamë, nuk ka regjistrimi i detyrueshëm. Raportet e rrëzimit dërgohen
+        vetëm me miratimin tuaj eksplicit dhe përmbajnë vetëm informacion teknik anonim.
+      </p>
+    </div>
+
+    <!-- Contact -->
+    <div class="card">
+      <h2>✉️ Kontakti &amp; Mbështetja</h2>
+      <p>
+        Për çdo pyetje, sugjerim ose problem teknik, na shkruani drejtpërdrejt:
+      </p>
+      <a class="email-btn" href="mailto:urata@jk-it.tech">urata@jk-it.tech</a>
+      <p style="margin-top:1rem; font-size:.88rem; color:var(--muted);">
+        Përgjigje zakonisht brenda 48 orëve &bull; Zvicër 🇨🇭
+      </p>
+    </div>
+
+    <footer>
+      &copy; 2026 Vilson Krasniqi – JK-IT Solution &bull;
+      <a href="mailto:urata@jk-it.tech" style="color:var(--muted);">urata@jk-it.tech</a>
+    </footer>
+  </div>
+</body>
+</html>
